@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta charset="UTF-8">
+    <title>wordladder</title>
+</head>
+<body>
+<form th:action="@{/logout}" method="post">
+    <input type="submit" value="Sign Out"/>
+</form>
+<h2>欢迎，您已成功登陆，现在可以使用wordladder了！</h2>
+<h1>现在在url传参可以使用wordladder，格式：localhost:8080/user/helloworld?fn=""&w1=cat&w2=bed</h1>
+<p>cat和bed可以换成你想要的word1和word2，fn是filename，但是我们现在只有一个filename，就是dictionary，因为读取文件出了点问题就写死了，所以你可以随便写一个fn，都是从dictionary出wordladder</p>
+<p>emmm,结果是可以显示出来，但是有奇怪的报错没有解决，答案也显示出来了的……</p>
+</body>
+</html>
